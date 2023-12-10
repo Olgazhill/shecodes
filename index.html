@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>My weather application</title>
+  </head>
+  <body>
+    
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+        <div class="world-gif">
+            <img src="img/AYv1.gif" alt="">
+        </div>
+      </header>
+
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <div class="weather-app-temperature-container">
+              <div id="icon"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png" class="weather-app-icon"></div>
+              <div class="weather-app-temperature" id="temperature"></div>
+              <div class="weatehr-app-unit"></div>
+            </div>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon"></span
+            ><span class="current-temperature-value" id="current-temperature"
+              >24</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      
+
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time">Sunday 3:32</span>,
+              <span id="description">clear sky</span>
+              <br>
+              Humidity: <strong id="humidity">82%</strong>, Wind:
+              <strong id="wind-speed">2.06km/h</strong>
+            </p>
+          </div>
+
+
+          <div class="weather-forecast" id="forecast">
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Sat</div>
+      
+              <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+              <div class="weather-forecast-temperatures">
+                <div class="weather-forecast-temperature">
+                  <strong>8º</strong>
+                </div>
+                <div class="weather-forecast-temperature">5º</div>
+              </div>
+            </div>
+          
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Sun</div>
+      
+              <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+              <div class="weather-forecast-temperatures">
+                <div class="weather-forecast-temperature">
+                  <strong>10º</strong>
+                </div>
+                <div class="weather-forecast-temperature">6º</div>
+              </div>
+            </div>
+          
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Mon</div>
+      
+              <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+              <div class="weather-forecast-temperatures">
+                <div class="weather-forecast-temperature">
+                  <strong>11º</strong>
+                </div>
+                <div class="weather-forecast-temperature">6º</div>
+              </div>
+            </div>
+          
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Tue</div>
+      
+              <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+              <div class="weather-forecast-temperatures">
+                <div class="weather-forecast-temperature">
+                  <strong>11º</strong>
+                </div>
+                <div class="weather-forecast-temperature">11º</div>
+              </div>
+            </div>
+          
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Wed</div>
+      
+              <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+              <div class="weather-forecast-temperatures">
+                <div class="weather-forecast-temperature">
+                  <strong>10º</strong>
+                </div>
+                <div class="weather-forecast-temperature">6º</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </main>
+      
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+
+      
+        <p>
+            <div class="col-6">
+
+              </div>
+        </p>
+        <footer>
+          
+            This project was coded by
+           
+           
+            <p><a href="https://github.com/Olgazhill" target="_blank">Olha Karkach</a> and is</p>
+         
+              <p><a href="https://github.com/Olgazhill/shecodes" target="_blank">on GitHub</a> and
+          </p>
+            <p><a href="https://heroic-toffee-885f3c.netlify.app" target="_blank">hosted on Netlify</a>
+        </p>
+         
+        </footer>
+    </div>
+  </body> 
+  <script src="index.js"></script>
+</html>
